@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bus Book Seat</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: system-ui, Arial, sans-serif;
+      }
+      body {
+        background: #f2f4f7;
+        margin: 0;
+        padding: 24px;
+      }
+
+      /* 🔹 Bus image top-left */
+      .bus-top {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+      }
+      .bus-img {
+        width: 80px;
+        height: auto;
+      }
+
+      .card {
+        max-width: 520px;
+        margin: 120px auto 32px; /* thoda neeche shift because of bus image */
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 24px 24px 28px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+      .logo-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #111;
+        object-fit: cover;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .subtitle {
+        color: #374151;
+        margin: 6px 0 18px;
+      }
+      .section-title {
+        font-weight: 600;
+        margin: 14px 0 8px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 6px;
+        font-size: 14px;
+      }
+      input[type="text"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        outline: none;
+      }
+      .radios {
+        display: flex;
+        gap: 18px;
+        margin: 6px 0 14px;
+      }
+      .book-link {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 12px 16px;
+        border: 1px solid #111;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #111;
+        background: #f9fafb;
+        transition: 0.15s;
+      }
+      .book-link:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      }
+      .hint {
+        font-size: 12px;
+        color: #6b7280;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <img src="image.png" alt="Bus Logo" class="logo-img" />
+        <div class="title">Bus Book Seat</div>
+      </div>
+      <div class="subtitle">* Welcome to Bus Booking System *</div>
+
+      <div class="section-title">User Detail</div>
+
+      <label for="username">User Name</label>
+      <input id="username" type="text" placeholder="Enter your name" required />
+
+      <label for="password">User Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        required
+      />
+
+      <label>User Gender</label>
+      <div class="radios">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+      </div>
+
+      <label for="city">User Select City</label>
+      <select id="city" required>
+        <option value="" selected disabled>Select your city</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bengaluru</option>
+        <option>Jaipur</option>
+        <option>Lucknow</option>
+      </select>
+
+      <a class="book-link" href="seat.html">Book Seat</a>
+      <div class="hint">
+        Note: “Book Seat” ek <a>&lt;a&gt;</a> anchor hai jo next page open karta
+        hai.
+      </div>
+    </div>
+  </body>
+</html>
