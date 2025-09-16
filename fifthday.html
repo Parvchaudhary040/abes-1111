@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<style>
+    #adi{
+        width: 500px;
+        height: 400px;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: green;
+    }
+    #aaa{
+        margin-top: 20px;
+        font-size: 25px;
+        color: red;
+    }
+</style>
+<body>
+    <button oneclick="red()">Red</button>
+    <button oneclick="blue()">Blue</button>
+    <button oneclick="green()">Green</button>
+    <div id="adi">
+        <button oneclick="">click</button>
+        <div id="aaa"></div>
+    </div>
+    <script>
+        function red(){
+            document.body.style.backgroundColor="red";
+        }
+        function blue(){
+            document.body.style.backgroundColor="blue";
+        }
+        function green(){
+            document.body.style.backgroundColor="green";
+        }
+    // function abes()
+    // {
+    //     document.write("python program");
+    // }
+    // abes();
+    // function add()
+    // {
+    //     var a=10;
+    //     var b=20;
+    //     var c=a+b;
+    //     document.write("<br>sum is:"+c);
+    // }
+    // function sub()
+    // {
+    //     var a=10;
+    //     var b=20;
+    //     var c=b-a;
+    //     document.write("<br>sub is:"+c);
+    // }
+    function abes(){
+        document.getElementById("aaa").innerHTML="hello jii";
+    }
+    </script>
+</body>
+</html>
